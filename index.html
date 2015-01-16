@@ -4,18 +4,29 @@
     <meta charset='utf-8'>
     <meta name="viewport" content="width=device=width, initial-scale=1">
     <title>Push Product</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/base-min.css">
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
     <!-- not putting in the ie crap -->
     <link rel='stylesheet' href='style.css'>
   </head>
 
   <body>
-    <div id=calculator>
-      <input type='text' id='raw'>
-      <input type='button' id='push' value='Push'>
-      <input type='button' id='product' value='Product'>
-      <h2>The product of <input type='text' id='input'> = <input type='text' id='answer'></h2>
-    </div>
+    <form class="pure-form pure-form-aligned">
+      <fieldset class="pure-group">
+        <legend>Please enter a number!</legend>
+        <input type='text' class="pure-input-1-2 pure-input-rounded" id='raw' placeholder="4">
+        <button class="pure-button button-color" id='push'>Push</button>
+        <button class="pure-button button-color" id='product'>Product</button>
+      </fieldset>
+      <fieldset class="pure-group">
+        <h2>The product of
+          <input type='text' class="pure-input-1-2 pure-input-rounded" id='input' placeholder="these numbers">
+          is
+          <input type='text' class="pure-input-1-2 pure-inpute-rounded" id='answer' placeholder="this number">
+        </h2>
+      </fieldset>
+    </form>
+
     <script src='jquery-2.1.1.min.js'></script>
     <script src='main.js'></script>
   </body>
