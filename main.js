@@ -4,7 +4,8 @@ function initialize(){
 
   var numbers = [];
 
-  $('#push').click(function(){
+  $('#push').click(function(evt){
+    evt.preventDefault();
     var raw = $('#raw').val();
     raw = parseInt(raw);
     numbers.push(raw);
@@ -13,7 +14,8 @@ function initialize(){
 
   })
 
-  $('#product').click(function(){
+  $('#product').click(function(evt){
+    evt.preventDefault();
     var product = 1;
     for(var i = 0; i < numbers.length; i++){
       product = product * numbers[i];
