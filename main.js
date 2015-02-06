@@ -2,9 +2,16 @@ $(document).ready(initialize);
 
 function initialize(){
 
-  var numbers = [];
+  $('#clear').click(function(evt){
+    evt.preventDefault();
+    $('#input').val(" ");
+    $('#answer').val(" ");
+    numbers = [];
+  })
 
-  $('#push').click(function(){
+  var numbers = [];
+  $('#push').click(function(evt){
+    evt.preventDefault();
     var raw = $('#raw').val();
     raw = parseInt(raw);
     numbers.push(raw);
@@ -13,7 +20,8 @@ function initialize(){
 
   })
 
-  $('#product').click(function(){
+  $('#product').click(function(evt){
+    evt.preventDefault();
     var product = 1;
     for(var i = 0; i < numbers.length; i++){
       product = product * numbers[i];
