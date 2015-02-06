@@ -2,8 +2,14 @@ $(document).ready(initialize);
 
 function initialize(){
 
-  var numbers = [];
+  $('#clear').click(function(evt){
+    evt.preventDefault();
+    $('#input').val(" ");
+    $('#answer').val(" ");
+    numbers = [];
+  })
 
+  var numbers = [];
   $('#push').click(function(evt){
     evt.preventDefault();
     var raw = $('#raw').val();
