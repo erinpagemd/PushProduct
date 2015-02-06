@@ -10,8 +10,8 @@
   </head>
 
   <body>
-    <div class="pure-g">
-      <form class="pure-form pure-form-aligned">
+    <div>
+      <form class="pure-form pure-form-stacked">
         <fieldset>
           <legend>Please enter a number! Press 'push' to send the number to the group and 'product' to multiply the numbers together.</legend>
           <input type='text' class="pure-input-1-2 pure-input-rounded" id='raw' placeholder="example: 4">
@@ -20,16 +20,15 @@
           <button class="pure-button pure-button-primary" id='push'>Push</button>
           <button class="pure-button pure-button-primary" id='product'>Product</button>
         </fieldset>
-        <fieldset>
+        <div class="calculated-info">
           <h2>The product of
-            <input type='text' class="pure-input-1-2 pure-input-rounded" id='input' placeholder="these numbers">
+            <input type='text' class="pure-input-1 pure-input-rounded" id='input' placeholder="these numbers">
             is
-            <input type='text' class="pure-input-1-2 pure-input-rounded" id='answer' placeholder="this number">
+            <input type='text' class="pure-input-1 pure-input-rounded" id='answer' placeholder="this number">
           </h2>
-        </fieldset>
-        <fieldset>
           <button class="pure-button pure-button-primary" id="clear">Clear</button>
-        </fieldset>
+        </div>
+      </form>
     </div>  
 
     <script src='jquery-2.1.1.min.js'></script>

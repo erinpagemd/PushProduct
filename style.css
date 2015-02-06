@@ -16,4 +16,14 @@ body{
 
 form {
   background-color: whitesmoke;
+  width: 50%;
+  margin: 1% 15%;
+  padding: 5%;
+}
+
+.calculated-info {
+  border: 2px solid black;
+  padding: 5%;
+  margin: 5% 15%;
+  text-align: center;
 }
